@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+</head>
+<body style="display: flex; flex-direction: column; align-items: center; font-family: Arial, sans-serif; background-color: #f4f4f9;">
+
+    <div style="margin-top: 50px;">
+        <h1 onclick="heading(this)" style="width: 200px; text-align: center; color: #333; font-size: 2em; cursor: pointer;">Stopwatch</h1>
+    </div>
+
+    <div style="display: flex; gap: 10px; font-size: 2em; color: #333;">
+        <h1 id="hour">0</h1>
+        <span>:</span>
+        <h1 id="min">0</h1>
+        <span>:</span>
+        <h1 id="sec">0</h1>
+        <span>:</span>
+        <h1 id="msec">0</h1>
+    </div>
+
+    <div id="container" style="margin-top: 20px; display: flex; gap: 10px;">
+        <button
+            id="str"
+            onclick="start()"
+            style="padding: 10px 20px; font-size: 1em; cursor: pointer; background-color: #4CAF50; color: white; border: none; border-radius: 5px;"
+        >Start</button>
+        <button 
+            onclick="stop()" 
+            style="padding: 10px 20px; font-size: 1em; cursor: pointer; background-color: #f44336; color: white; border: none; border-radius: 5px;"
+        >Stop</button>
+        <button 
+            onclick="reset()" 
+            style="padding: 10px 20px; font-size: 1em; cursor: pointer; background-color: #555; color: white; border: none; border-radius: 5px;"
+        >Reset</button>
+    </div>
+  <script src="app.js"></script>
+</body>
+</html>
